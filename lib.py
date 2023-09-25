@@ -1,5 +1,4 @@
 from datetime import datetime
-
 # Define a class to represent a book
 class Book:
     def __init__(self, title, author, price, copies=1):
@@ -200,12 +199,8 @@ class Library:
 
 # Define a class to represent a user
 class User:
-    def __init__(self, name, password):
+    def __init__(self, name):
         self.name = name
-        if len(password) >= 8:
-            self.password = password
-        else:
-            raise ValueError("Password must be at least 8 characters long.")
         self.borrowed_books = []  # List to store books borrowed by the user
 
 # Create an instance of the Library class
